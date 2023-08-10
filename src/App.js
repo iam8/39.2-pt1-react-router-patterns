@@ -1,4 +1,10 @@
+import React from "react";
+import {BrowserRouter} from "react-router-dom";
+
+import Routes from "./Routes";
+import Nav from "./Nav";
 import './App.css';
+
 import whiskey from "./dog1.jpg";
 import duke from "./dog2.jpg";
 import perry from "./dog3.jpg";
@@ -8,7 +14,10 @@ import tubby from "./dog4.jpg";
 function App() {
     return (
         <div className="App">
-
+            <BrowserRouter>
+                <Nav />
+                <Routes />
+            </BrowserRouter>
         </div>
     );
 }
