@@ -1,4 +1,8 @@
 import './App.css';
+import whiskey from "./dog1.jpg";
+import duke from "./dog2.jpg";
+import perry from "./dog3.jpg";
+import tubby from "./dog4.jpg";
 
 
 function App() {
