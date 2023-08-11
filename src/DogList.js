@@ -7,7 +7,7 @@ import "./DogList.css";
 function DogList ({allDogInfo}) {
     return (
         <div className="DogList">
-            <h1 className="DogList-heading">AVAILABLE DOGS</h1>
+            <h1 className="DogList-heading">Available Dogs</h1>
 
             <div className="DogList-list">
                 {allDogInfo.map(dog => {
