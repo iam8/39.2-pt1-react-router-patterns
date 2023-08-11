@@ -1,21 +1,13 @@
 import React from "react";
-import { Redirect, useParams } from "react-router-dom";
 
 import "./DogDetails.css";
 
 
-function DogDetails ({allDogInfo}) {
-    const {name} = useParams();
-
-    // Get the matching dog
-    const dog = allDogInfo.find(dog => dog.name.toLowerCase() === name);
-
-    // If no matching dog is found, redirect to home page
-    if (!dog) return <Redirect to="/dogs"/>;
+function DogDetails ({dog}) {
 
     return (
         <div className="DogDetails">
-            <h1 className="DogDetails-heading">{name.toUpperCase()}</h1>
+            <h1 className="DogDetails-heading">{dog.name}</h1>
 
             <div className="DogDetails-img-div">
                 <img
