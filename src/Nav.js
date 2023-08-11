@@ -7,13 +7,22 @@ import "./Nav.css";
 function Nav ({names}) {
     return (
         <nav className="Nav">
+
+            <NavLink exact to="/dogs">Home</NavLink>
+
             {
-                names.map((name) => {
+                names.map((name, index) => {
                     return (
-                        <NavLink exact to={`/dogs/${name.toLowerCase()}`}>{name}</NavLink>
+                        <NavLink
+                            key={index}
+                            exact
+                            to={`/dogs/${name.toLowerCase()}`}>
+                                {name}
+                        </NavLink>
                     );
                 })
             }
+
         </nav>
     );
 }
