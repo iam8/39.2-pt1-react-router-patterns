@@ -13,11 +13,10 @@ function DogList ({allDogInfo}) {
                 {allDogInfo.map(dog => {
                     return (
                         <div className="DogList-card" key={dog.name}>
-                            <Link to={`/dogs/${dog.name.toLowerCase()}`}>{dog.name}</Link>
-
-                            <div>
+                            <Link to={`/dogs/${dog.name.toLowerCase()}`}>
+                                {dog.name}
                                 <img className="DogList-img" src={dog.src} alt={dog.name}/>
-                            </div>
+                            </Link>
                         </div>
                     );
                 })}
