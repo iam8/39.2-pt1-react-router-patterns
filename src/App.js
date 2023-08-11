@@ -19,8 +19,13 @@ function App() {
     return (
         <div className="App">
             <BrowserRouter>
+
                 <Nav names={names} />
-                <Routes allDogInfo={App.defaultProps.dogs}/>
+
+                <div className="App-routes">
+                    <Routes allDogInfo={App.defaultProps.dogs}/>
+                </div>
+
             </BrowserRouter>
         </div>
     );
