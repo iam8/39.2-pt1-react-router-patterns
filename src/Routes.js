@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 
 import DogList from "./DogList";
-import DogDetails from "./DogDetails";
+import CreateDogDetails from "./CreateDogDetails";
 
 
 function Routes ({allDogInfo}) {
@@ -14,7 +14,7 @@ function Routes ({allDogInfo}) {
             </Route>
 
             <Route exact path="/dogs/:name">
-                <DogDetails allDogInfo={allDogInfo}/>
+                <CreateDogDetails allDogInfo={allDogInfo} />
             </Route>
 
             <Redirect to="/dogs"/>
