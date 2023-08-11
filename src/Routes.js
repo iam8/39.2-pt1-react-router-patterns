@@ -14,7 +14,7 @@ function Routes ({allDogInfo}) {
             </Route>
 
             <Route path="/dogs/:name">
-                <DogDetails />
+                <DogDetails allDogInfo={allDogInfo}/>
             </Route>
 
             <Redirect to="/dogs"/>
