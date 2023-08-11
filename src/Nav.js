@@ -4,9 +4,15 @@ import { NavLink } from "react-router-dom";
 
 function Nav ({names}) {
     return (
-        <div className="Nav">
-            {names}
-        </div>
+        <nav className="Nav">
+            {
+                names.map((name) => {
+                    return (
+                        <NavLink exact to={`/dogs/${name.toLowerCase()}`}>{name}</NavLink>
+                    );
+                })
+            }
+        </nav>
     );
 }
 
