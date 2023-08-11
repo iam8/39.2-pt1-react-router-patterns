@@ -10,19 +10,17 @@ function DogList ({allDogInfo}) {
             <h1 className="DogList-heading">AVAILABLE DOGS</h1>
 
             <div className="DogList-list">
-                <ul>
-                    {allDogInfo.map(dog => {
-                        return (
-                            <li key={dog.name}>
-                                <Link to={`/dogs/${dog.name.toLowerCase()}`}>{dog.name}</Link>
+                {allDogInfo.map(dog => {
+                    return (
+                        <div className="DogList-card" key={dog.name}>
+                            <Link to={`/dogs/${dog.name.toLowerCase()}`}>{dog.name}</Link>
 
-                                <div>
-                                    <img className="DogList-img" src={dog.src} alt={dog.name}/>
-                                </div>
-                            </li>
-                        );
-                    })}
-                </ul>
+                            <div>
+                                <img className="DogList-img" src={dog.src} alt={dog.name}/>
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
 
         </div>
