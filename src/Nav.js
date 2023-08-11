@@ -11,10 +11,10 @@ function Nav ({names}) {
             <NavLink exact to="/dogs">Home</NavLink>
 
             {
-                names.map((name, index) => {
+                names.map((name) => {
                     return (
                         <NavLink
-                            key={index}
+                            key={name}
                             exact
                             to={`/dogs/${name.toLowerCase()}`}>
                                 {name}
