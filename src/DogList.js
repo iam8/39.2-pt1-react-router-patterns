@@ -1,9 +1,11 @@
 import React from "react";
 
 
-function DogList () {
+function DogList ({allDogInfo}) {
     return (
         <div className="DogList">
+            <h1>AVAILABLE DOGS</h1>
+
             A list of dogs goes here
         </div>
     )
