@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
 
 import "./DogDetails.css";
 
@@ -9,6 +9,9 @@ function DogDetails ({allDogInfo}) {
 
     // Get the matching dog
     const dog = allDogInfo.find(dog => dog.name.toLowerCase() === name);
+
+    // If no matching dog is found, redirect to home page
+    if (!dog) return <Redirect to="/dogs"/>;
 
     return (
         <div className="DogDetails">
