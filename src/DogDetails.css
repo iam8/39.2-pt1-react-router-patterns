@@ -1,0 +1,16 @@
+.DogDetails-heading {
+    text-align: left;
+}
+
+.DogDetails-img-div {
+    height: 50vh;
+}
+
+.DogDetails-img {
+    height: 100%;
+    border-radius: 10%;
+}
+
+.DogDetails-info-text {
+    margin: 10px 0px;
+}
