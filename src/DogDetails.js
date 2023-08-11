@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 import "./DogDetails.css";
 
@@ -32,6 +33,12 @@ function DogDetails ({dog}) {
                         })
                     }
                 </ul>
+            </div>
+
+            <div className="DogDetails-homelink">
+                <Link to="/dogs">
+                    BACK TO HOME
+                </Link>
             </div>
 
         </div>
