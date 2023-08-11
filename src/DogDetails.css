@@ -14,3 +14,7 @@
 .DogDetails-info-text {
     margin: 10px 0px;
 }
+
+.DogDetails-homelink {
+    font-weight: bold;
+}
