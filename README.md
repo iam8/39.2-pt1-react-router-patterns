@@ -1,3 +1,5 @@
+Exercise 39.2, PART 1 ONLY.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
