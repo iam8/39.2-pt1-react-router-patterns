@@ -13,7 +13,7 @@ function Routes ({allDogInfo}) {
                 <DogList allDogInfo={allDogInfo}/>
             </Route>
 
-            <Route path="/dogs/:name">
+            <Route exact path="/dogs/:name">
                 <DogDetails allDogInfo={allDogInfo}/>
             </Route>
 
