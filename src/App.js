@@ -20,7 +20,7 @@ function App() {
         <div className="App">
             <BrowserRouter>
                 <Nav names={names} />
-                <Routes />
+                <Routes allDogInfo={App.defaultProps.dogs}/>
             </BrowserRouter>
         </div>
     );
