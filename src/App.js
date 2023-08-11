@@ -12,10 +12,14 @@ import tubby from "./dog4.jpg";
 
 
 function App() {
+
+    // Create array of the dog names
+    const names = App.defaultProps.dogs.map(dog => dog.name);
+
     return (
         <div className="App">
             <BrowserRouter>
-                <Nav />
+                <Nav names={names} />
                 <Routes />
             </BrowserRouter>
         </div>
